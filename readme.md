@@ -10,6 +10,9 @@ The original data comes from [CelesTrak.com](https://www.celestrak.com/publicati
 2019/08/05:\
 I have replaced all codes from shupp/sgp4 with those from CelesTrak.com. The `tmatvera.out` file was missing in repo `shupp/sgp4` and is added now.
 
+2019/08/06: IMPORTANT ! \
+Original codes from CelesTrak.com are backed up in a new branch [`CelesTrak-original-codes`](https://github.com/astroHaoPeng/CelesTrak-sgp4-matlab-only/tree/CelesTrak-original-codes). 
+From now on, the `main` branch will be my own codes and modifications.
 
 # My Initialization Modifications
 
@@ -32,6 +35,17 @@ To verify your installation, execute the `testmat` script in Matlab.
 Then you can get an output file `tmatver.out`, which is exactly the same to that comes with the distribution from CelesTrak.com in file `tmatvera.out`.
 
 With other inputs, the results vary. Just try it!
+
+
+
+# TODO-list
+
+- [ ] Conversion function to J2000.
+- [ ] Improve propagation efficiency, and always check/validate the new improvements.
+- [ ] Provide better API.
+- [ ] Vectorize all the calculation, and validate.
+
+
 
 
 ------------
